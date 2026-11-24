@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulário de cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="cartao">
+    <h1>Criar cadastro</h1>
+    <p class="subtitulo">Preencha todos os campos para continuar.</p>
+
+    <form id="formulario" novalidate>
+      <div class="campo">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" autocomplete="name">
+        <span class="erro" id="erro-nome" role="alert"></span>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" autocomplete="email">
+        <span class="erro" id="erro-email" role="alert"></span>
+      </div>
+
+      <div class="campo">
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" name="idade" min="1">
+        <span class="erro" id="erro-idade" role="alert"></span>
+      </div>
+
+      <div class="campo">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" autocomplete="new-password">
+        <span class="erro" id="erro-senha" role="alert"></span>
+      </div>
+
+      <button type="submit">Cadastrar</button>
+      <p class="mensagem-geral" id="mensagem" role="status"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

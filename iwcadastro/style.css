@@ -1,0 +1,93 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background: #eef2f7;
+  color: #1f2937;
+}
+
+.cartao {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+}
+
+h1 { margin: 0 0 4px; font-size: 1.6rem; }
+.subtitulo { margin: 0 0 24px; color: #6b7280; }
+
+.campo { margin-bottom: 16px; }
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus { border-color: #2563eb; }
+input.invalido { border-color: #dc2626; }
+input.valido { border-color: #16a34a; }
+
+.erro {
+  display: block;
+  min-height: 18px;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #dc2626;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover { background: #1d4ed8; }
+button:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
+
+.mensagem-geral {
+  margin: 16px 0 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.mensagem-geral.sucesso {
+  padding: 12px;
+  color: #166534;
+  background: #dcfce7;
+  border-radius: 8px;
+}
+
+.mensagem-geral.falha {
+  padding: 12px;
+  color: #991b1b;
+  background: #fee2e2;
+  border-radius: 8px;
+}
